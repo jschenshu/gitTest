@@ -10,8 +10,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(){
         System.out.println("hello");
-        System.out.println(System.currentTimeMillis());
-        System.out.println(System.currentTimeMillis());
+        System.out.println("结束时间：" + System.currentTimeMillis());
         System.out.println("hello");
         System.out.println("hello");
         return "hello";
