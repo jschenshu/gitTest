@@ -2,8 +2,9 @@ package cn.chen.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class HelloController {
 
     @RequestMapping("/hello")
@@ -22,6 +23,12 @@ public class HelloController {
     public String hello3(){
         System.out.println("hello3");
         return "hello3";
+    }
+
+    @RequestMapping("/hello4")
+    public String hello4(){
+        System.out.println("hello4");
+        return "hello4";
     }
 
 }
